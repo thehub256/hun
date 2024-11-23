@@ -1,5 +1,5 @@
-# Use an official PHP runtime as a parent image
-FROM php:8.1-apache
+# Use an official PHP 8.2 runtime as a parent image
+FROM php:8.2-apache
 
 # Set the working directory in the container
 WORKDIR /var/www/html
@@ -50,3 +50,4 @@ RUN a2enmod rewrite
 
 # Define the command to run the Apache server
 CMD ["apache2-foreground"]
+
