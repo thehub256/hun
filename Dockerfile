@@ -36,7 +36,7 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Install Laravel application dependencies
 #RUN composer install --no-dev --optimize-autoloader
-RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
+RUN composer install --ignore-platform-req=ext-gd --ignore-platform-req=ext-intl --ignore-platform-req=ext-mysqli --ignore-platform-req=ext-zip --ignore-platform-req=ext-sodium
 
 # Set proper permissions for Laravel storage and cache directories
 RUN chown -R www-data:www-data /var/www/html \
