@@ -6,7 +6,7 @@
 /storage/app/*
 .vscode
 .idea
-
+.env
 .env.backup
 Homestead.json
 Homestead.yaml
