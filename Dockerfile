@@ -35,7 +35,8 @@ RUN apt-get update && apt-get install -y \
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 # Install Laravel application dependencies
-RUN composer install --no-dev --optimize-autoloader
+#RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
 # Set proper permissions for Laravel storage and cache directories
 RUN chown -R www-data:www-data /var/www/html \
