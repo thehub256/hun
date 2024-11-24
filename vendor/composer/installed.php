@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '425229ad92f5862d6b6c361221adf01cea1eb52f',
+        'reference' => '01795e72187913245625232fec16e975d2026ab7',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -18,6 +18,42 @@
             'install_path' => __DIR__ . '/../amirami/localizator',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'apimatic/core' => array(
+            'pretty_version' => '0.3.11',
+            'version' => '0.3.11.0',
+            'reference' => '2274f103f9f210664f546f504e4559d772a81fee',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../apimatic/core',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'apimatic/core-interfaces' => array(
+            'pretty_version' => '0.1.5',
+            'version' => '0.1.5.0',
+            'reference' => 'b4f1bffc8be79584836f70af33c65e097eec155c',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../apimatic/core-interfaces',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'apimatic/jsonmapper' => array(
+            'pretty_version' => '3.1.4',
+            'version' => '3.1.4.0',
+            'reference' => '407b455d2adda2efa51a44b99400389fbee0394e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../apimatic/jsonmapper',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'apimatic/unirest-php' => array(
+            'pretty_version' => '4.0.5',
+            'version' => '4.0.5.0',
+            'reference' => 'e16754010c16be5473289470f129d87a0f41b55e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../apimatic/unirest-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'aws/aws-crt-php' => array(
             'pretty_version' => 'v1.2.7',
@@ -706,7 +742,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '425229ad92f5862d6b6c361221adf01cea1eb52f',
+            'reference' => '01795e72187913245625232fec16e975d2026ab7',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1182,6 +1218,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'paypal/paypal-server-sdk' => array(
+            'pretty_version' => '0.6.0',
+            'version' => '0.6.0.0',
+            'reference' => '7d69e118998fdf2ae2cf234f1bd49f4248782380',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../paypal/paypal-server-sdk',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'paypal/rest-api-sdk-php' => array(
             'pretty_version' => 'v1.6.4',
             'version' => '1.6.4.0',
@@ -1232,6 +1277,15 @@
             'provided' => array(
                 0 => '1.0',
             ),
+        ),
+        'php-jsonpointer/php-jsonpointer' => array(
+            'pretty_version' => 'v3.0.2',
+            'version' => '3.0.2.0',
+            'reference' => '4428f86c6f23846e9faa5a420c4ef14e485b3afb',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-jsonpointer/php-jsonpointer',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'phpoffice/phpspreadsheet' => array(
             'pretty_version' => '1.29.5',
@@ -1431,8 +1485,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '3.0.0',
+                0 => '3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
